@@ -1,0 +1,22 @@
+spring:
+  ## Dev-tools ##
+  devtools:
+    restart:
+      trigger-file: reload
+    livereload:
+      enabled: false
+server:
+  ## Message errors ##
+  error:
+    include-message: always
+    include-stacktrace: always
+logging:
+  level:
+    root: info
+    com.hitomi.hop: debug
+    org.hibernate.sql: debug
+    org.springframework.data.elasticsearch: debug
+management:
+  endpoint:
+    health:
+      show-details: always

@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: hatsu-locations
+    version: @version@
+  ## REST ##
+  jackson:
+    default-property-inclusion: non_null
+server:
+  ## Message errors ##
+  error:
+    include-message: never
+    include-stacktrace: never
+logging:
+  level:
+    root: warn
+    com.hitomi.hop: info
